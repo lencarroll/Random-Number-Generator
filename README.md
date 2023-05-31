@@ -6,7 +6,7 @@ This random number generator records audio (via a microphone) based on a duratio
 
 The frequencies are then normalized using:
 
-$\frac{f - f_\text{min}}{f_\text{max} - f_\text{min}}$
+$$\frac{f - f_\text{min}}{f_\text{max} - f_\text{min}}$$
 
 This gives the frequencies now values between 0 and 1. The average of these frequencies are taken and the result outputted.
 
