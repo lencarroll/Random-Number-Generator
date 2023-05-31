@@ -18,8 +18,13 @@ The advantage of this script is that it is very difficult to reproduce recording
 
 ## Arguments:
 verbose : Either 0 or 1. 0 means nothing is printed, 1 means that a message is printed stating when recording starts.
+
 method : What Fourier Transform method do you want to use, STFT or FFT?
+
 duration : (in seconds). How long should the recording be? The longer, the better.
+
 sampling_rate : The sample rate of the recording.
-frame_size : The frame_size of the recording
-hop_length : The hop length of the recording
+
+frame_size : The frame_size of the recording.
+
+hop_length : The hop length of the recording.
