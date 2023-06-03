@@ -8,11 +8,11 @@ The frequencies are then normalized using:
 
 $$f_\text{N} = \frac{f - f_\text{min}}{f_\text{max} - f_\text{min}}$$
 
-This gives the frequencies now values between 0 and 1, exclusive. The average of these frequencies are taken and the result outputted.
+This gives the frequencies now values between 0 and 1, exclusive. The average of these frequencies are taken and the result outputted, after anoise factor randomly generated from Python Secrets is added.
 
 If you don't have a microphone, this won't work. If your recordings have only one tone, that is, the average frequency equals the individual frequencies, an error message will be produced and this won't work.
 
-In the future I hope to add more complexity, because as for now the values are typically biased to take on a low value (below 0.1) with my microphone.
+The addition of Python Secrets noise factor also ensures that the values aren't biased to be too low or too high, as they were in the past.
 
 The advantage of this script is that it is very difficult to reproduce recordings, with background noise, microphone artefacts, etc. all playing a role.
 
